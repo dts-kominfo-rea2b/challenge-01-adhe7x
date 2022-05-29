@@ -2,7 +2,7 @@
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
-const user1 = {
+const firstUser = {
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
@@ -42,7 +42,7 @@ const user1 = {
     ],
 };
 
-const user2 = {
+const secondUser = {
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
@@ -86,7 +86,7 @@ const user2 = {
 };
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
-const users = [user1, user2];
+const users = [firstUser, secondUser];
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
