@@ -3,6 +3,7 @@
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
 
 const firstUser = {
+    name: "Monica",
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
@@ -43,6 +44,7 @@ const firstUser = {
 };
 
 const secondUser = {
+    name: "Wendy",
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
