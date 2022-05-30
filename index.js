@@ -1,13 +1,46 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
+let colorMonica = ["Yellow", "Pink", "White", "Purple"];
+
+let colorWendy = ["Blue", "Black", "Grey"];
+
+let restaurantMonica =  [
+    "Bento",
+    "Sushi",
+    "Pancake",
+    "Eggy",
+    "Tempura",
+    "Bento",
+    "Eggy",
+    "Padang",
+    "Tteok",
+    "Sushi",
+    "Sushi",
+];
+
+let restaurantWendy = [
+    "Tempura",
+    "Bento",
+    "Sushi",
+    "Pancake",
+    "Padang",
+    "Katsu",
+    "Geprek",
+    "Pancake",
+    "Eggy",
+];
+
+function removeDuplicate(x){
+    return [...new Set(x)]
+};
 
 const firstUser = {
     name: "Monica",
     gender: "Female",
     age: 17,
     email: "monica@dingdong.com",
-    favoriteColor: ["Yellow", "Pink", "White", "Purple"],
+    favoriteColor: removeDuplicate(colorMonica),
     isHavePet: true,
     education: [
     {
@@ -28,19 +61,7 @@ const firstUser = {
     },
     ],
     
-    favoriteRestaurant: [
-        "Bento",
-        "Sushi",
-        "Pancake",
-        "Eggy",
-        "Tempura",
-        "Bento",
-        "Eggy",
-        "Padang",
-        "Tteok",
-        "Sushi",
-        "Sushi",
-    ],
+    favoriteRestaurant: removeDuplicate(restaurantMonica),
 };
 
 const secondUser = {
@@ -48,7 +69,7 @@ const secondUser = {
     gender: "Male",
     age: 23,
     email: "wendy@dingdong.com",
-    favoriteColor: ["Blue", "Black", "Grey"],
+    favoriteColor: removeDuplicate(colorWendy),
     isHavePet: false,
     education: [{
         name: "SD 02",
@@ -74,18 +95,9 @@ const secondUser = {
     },
     ],
     
-    favoriteRestaurant: [
-        "Tempura",
-        "Bento",
-        "Sushi",
-        "Pancake",
-        "Padang",
-        "Katsu",
-        "Geprek",
-        "Pancake",
-        "Eggy",
-    ],
+    favoriteRestaurant: removeDuplicate(restaurantWendy),
 };
+
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [firstUser, secondUser];
